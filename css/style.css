@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*-----  FONTS & COLORS  -----*/
+p {
+  letter-spacing: 0.9px;
+}
+
+.btn {
+  display: flex;
+  width: 17.6rem;
+  height: 7.1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 36px;
+  background-color: transparent;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn a {
+  color: #1e1e1e;
+  font: normal 500 18px/24px "Poppins", sans-serif;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ec640e;
+}
+
+.btn:hover a {
+  color: #fff;
+}
+
+.btn:hover i svg path {
+  fill: #fff !important;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 99999;
+  width: 100;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+header .main-navigation {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+header .main-navigation .menu ul {
+  gap: 2.5rem;
+}
+
+header .main-navigation .menu ul a {
+  font: normal 500 18px/24px "Poppins", sans-serif;
+  color: #fff;
+}
+
+header .main-navigation .btn-contact {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+header .main-navigation .btn-contact a {
+  font: normal 500 18px/24px "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+header .main-navigation .btn-contact i {
+  color: #fff;
+}
+
+header .main-navigation .btn-contact:hover {
+  background-color: #ec640e;
+  border: 1px solid #ec640e;
+}
+
+.main-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.main-banner img {
+  width: 100%;
+}
+
+.main-banner .info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.main-banner .info-block img {
+  width: 14rem;
+}
+
+.main-banner .info-block h1 {
+  font: normal 700 4rem/70px "Oswald", sans-serif;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.main-banner .info-block p {
+  font: normal 500 18px/24px "Poppins", sans-serif;
+  font-size: 16px;
+  text-wrap: balance;
+  max-width: 35em;
+}
+
+.main-banner .bottom-block {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  bottom: 3rem;
+  width: 100%;
+}
+
+.main-banner .bottom-block .numbers {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.main-banner .bottom-block .numbers p {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #c3c3c3;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+
+.main-banner .bottom-block .numbers p::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #c3c3c3;
+  border-radius: 50%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-banner .bottom-block .soc-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-banner .bottom-block .soc-icons i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.main-banner .btn-become {
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.wrapper #about-us {
+  padding-top: 6rem;
+}
+
+.wrapper #about-us .about-us-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10rem;
+  position: relative;
+}
+
+.wrapper #about-us .about-us-container__right-text h4 {
+  font: normal 700 4rem/70px "Oswald", sans-serif;
+  font-size: 18px;
+  color: #ec640e;
+  text-transform: uppercase;
+}
+
+.wrapper #about-us .about-us-container__right-text .we {
+  padding-top: 3rem;
+}
+
+.wrapper #about-us .about-us-container__right-text .we p {
+  font: normal 500 18px/24px "Poppins", sans-serif;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  line-height: 30px;
+}
+
+.wrapper #about-us .about-us-container__unicon {
+  position: absolute;
+  top: 5%;
+  left: 24%;
+  transform: translate(-50%, 0%);
+}
+
+.wrapper #about-us .about-us-container__unicon img {
+  width: 29rem;
+}
+
+.wrapper #about-us .about-us-container__description h2 {
+  font: normal 700 4rem/70px "Oswald", sans-serif;
+  color: #ec640e;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.wrapper #about-us .about-us-container__description p {
+  font: normal 500 18px/24px "Poppins", sans-serif;
+  color: #1e1e1e;
+}
+
+.wrapper #about-us .about-us-container__description .our-service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.wrapper #about-us .about-us-container__description .our-service .info {
+  color: #1e1e1e;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #d2d2d2;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.wrapper #about-us .about-us-container__description .our-service .info:hover {
+  background-color: #ec640e;
+  color: #fff;
+}
+
+.wrapper #about-us .about-us-container__description .our-service .info:hover p {
+  color: #fff;
+}
+
+.wrapper #about-us .about-us-container__description .our-service .info:hover .title svg path {
+  fill: #fff !important;
+}
+
+.wrapper #about-us .about-us-container__description .our-service .info .title {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.wrapper #about-us .about-us-container__description .our-service .info .title svg path {
+  transition: all 0.5s ease-in-out;
+}
+
+.wrapper #about-us .about-us-container__description .our-service .info .title h5 {
+  font: normal 700 4rem/70px "Oswald", sans-serif;
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+.wrapper #about-us .about-us-container__description .our-service .info p {
+  font: normal 500 18px/24px "Poppins", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.wrapper #about-us .find-solutions-container {
+  padding-top: 2.5rem;
+  position: relative;
+}
+
+.wrapper #about-us .find-solutions-container .find-your-solutions {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 24.6rem;
+  height: 6rem;
+}
+
+.wrapper #about-us .find-solutions-container .find-your-solutions i {
+  margin-top: 4px;
+}
+
+.wrapper #about-us .find-solutions-container .find-your-solutions i svg path {
+  transition: all 0.5s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */

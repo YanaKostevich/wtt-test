@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*-----  FONTS & COLORS  -----*/
+p {
+  letter-spacing: 0.9px;
+}
+
+.btn {
+  display: flex;
+  width: 17.6rem;
+  height: 7.1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 36px;
+  background-color: transparent;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn a {
+  color: #1e1e1e;
+  font: normal 500 18px/24px "Poppins", sans-serif;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ec640e;
+}
+
+.btn:hover a {
+  color: #fff;
+}
+
+.btn:hover i svg path {
+  fill: #fff !important;
+}
+
+/*--------------------------------------------*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+#wrapper .main {
+  flex: 1 1 auto;
+}
+
+#page {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.wrapper,
+header,
+.bottom-block {
+  max-width: 1440px;
+  padding: 2.25rem 0 0 0;
+  margin: 0 auto;
+}
+
+.bottom-block {
+  padding: 0;
+}
+
+@media (max-width: 1440px) and (min-width: 768px) {
+  .wrapper,
+  header,
+  .bottom-block {
+    padding: 0.5rem 4rem 0 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper,
+  header,
+  .bottom-block {
+    padding: 1.5rem;
+  }
+}
+/*# sourceMappingURL=zero.css.map */

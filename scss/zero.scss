@@ -1,0 +1,63 @@
+@import "_variables";
+/*--------------------------------------------*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 14px;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+#wrapper .main {
+    flex: 1 1 auto;
+}
+#page {
+    margin: 0 auto;
+    height: 100%;
+}
+.wrapper,
+header,
+.bottom-block {
+    max-width: 1440px;
+    padding: 2.25rem 0 0 0;
+    margin: 0 auto;
+}
+.bottom-block {
+    padding: 0;
+}
+@media (max-width: 1440px) and (min-width: 768px) {
+    .wrapper,
+    header,
+    .bottom-block {
+        padding: 0.5rem 4rem 0 4rem;
+    }
+}
+@media (max-width: 767px) {
+    .wrapper,
+    header,
+    .bottom-block {
+        padding: 1.5rem;
+    }
+}
